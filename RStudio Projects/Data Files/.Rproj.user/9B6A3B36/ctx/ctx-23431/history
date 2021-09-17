@@ -1,0 +1,512 @@
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<20]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+#decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+#decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+#decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+#decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+#decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+#decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+#decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+#decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+#decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+decision2[my_prediction2$Texting=="Always"& my_prediction2$Score<50]<-"Fail"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+test2 <-test_data
+decision_2 <- rep('Pass',nrow(test2))
+decision_2[test2$Major=="Cs" & test2$Score<50]<-"Fail"
+decision_2[test2$Seniority=="Senior"& test2$Attendance==0]<-"Fail"
+decision_2[test2$Questions=="Rarely" & test2$Attendance==0]<-"Fail"
+decision_2[test2$Major=="Communication" & test2$Score<40]<-"Fail"
+decision_2[test2$Questions=="Rarely"& test2$Score<50]<-"Fail"
+decision_2[test2$Questions=="Always"& test2$Score>50]<-"Pass"
+decision_2[test2$Texting=="Rarely"& test2$Score>51]<-"Pass"
+test2$Grade<-as.factor(decision_2)
+test$Grade<-as.factor(decision_2)
+sample_submit2$Grade = test2$Grade
+summary(sample_submit2)
+sample_submit2 <- read.csv("M2021test-submission-file.csv",stringsAsFactors = TRUE)
+test2 <-test_data
+decision_2 <- rep('Pass',nrow(test2))
+decision_2[test2$Major=="Cs" & test2$Score<50]<-"Fail"
+decision_2[test2$Seniority=="Senior"& test2$Attendance==0]<-"Fail"
+decision_2[test2$Questions=="Rarely" & test2$Attendance==0]<-"Fail"
+decision_2[test2$Major=="Communication" & test2$Score<40]<-"Fail"
+decision_2[test2$Questions=="Rarely"& test2$Score<50]<-"Fail"
+decision_2[test2$Questions=="Always"& test2$Score>50]<-"Pass"
+decision_2[test2$Texting=="Rarely"& test2$Score>51]<-"Pass"
+test2$Grade<-as.factor(decision_2)
+test$Grade<-as.factor(decision_2)
+sample_submit2$Grade = test2$Grade
+summary(sample_submit2)
+test2 <-test_data
+decision_2 <- rep('Pass',nrow(test2))
+decision_2[test2$Major=="Cs" & test2$Score<50]<-"Fail"
+decision_2[test2$Seniority=="Senior"& test2$Attendance==0]<-"Fail"
+decision_2[test2$Questions=="Rarely" & test2$Attendance==0]<-"Fail"
+decision_2[test2$Major=="Communication" & test2$Score<40]<-"Fail"
+decision_2[test2$Questions=="Rarely"& test2$Score<50]<-"Fail"
+decision_2[test2$Questions=="Always"& test2$Score>50]<-"Pass"
+decision_2[test2$Texting=="Rarely"& test2$Score>51]<-"Pass"
+test2$Grade<-as.factor(decision_2)
+test2$Grade<-as.factor(decision_2)
+sample_submit2$Grade = test2$Grade
+summary(sample_submit2)
+test <-test_data
+decision5 <- rep('Pass',nrow(test))
+decision5[test$Major=="Cs"
+& test$Score<20
+&test$Texting=="Always"]<-"Fail"
+decision5[test$Seniority=="Senior"
+&test$Questions=="Rarely"
+& test$Attendance==0]<-"Fail"
+decision5[test$Texting=="Rarely"
+& test$Questions=="Always"
+& test$Score>50]<-"Pass"
+test$Grade<-as.factor(decision5)
+sample_submit$Grade = test$Grade
+summary(sample_submit)
+test2 <-test_data
+decision_2 <- rep('Pass',nrow(test2))
+decision_2[test2$Major=="Cs" & test2$Score<50]<-"Fail"
+decision_2[test2$Seniority=="Senior"& test2$Attendance==0]<-"Fail"
+decision_2[test2$Questions=="Rarely" & test2$Attendance==0]<-"Fail"
+decision_2[test2$Major=="Communication" & test2$Score<40]<-"Fail"
+decision_2[test2$Questions=="Rarely"& test2$Score<50]<-"Fail"
+decision_2[test2$Questions=="Always"& test2$Score>50]<-"Pass"
+decision_2[test2$Texting=="Rarely"& test2$Score>51]<-"Pass"
+test2$Grade<-as.factor(decision_2)
+test2$Grade<-as.factor(decision_2)
+sample_submit2$Grade = test2$Grade
+summary(sample_submit2)
+write.csv(sample_submit2, file = "asilva_submission.csv", row.names = FALSE)
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+train2 <-train_data[sample(1:nrow(train_data)),]
+training2 <- train2[1:2000,]
+testing2<-train2[2001:4000,]
+my_prediction2 <- training2
+decision2 <- rep('Pass',nrow(my_prediction2))
+decision2[my_prediction2$Major=="Cs" & my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Seniority=="Senior"& my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely" & my_prediction2$Attendance==0]<-"Fail"
+decision2[my_prediction2$Major=="Communication" & my_prediction2$Score<40]<-"Fail"
+decision2[my_prediction2$Questions=="Rarely"& my_prediction2$Score<50]<-"Fail"
+decision2[my_prediction2$Questions=="Always"& my_prediction2$Score>50]<-"Pass"
+decision2[my_prediction2$Texting=="Rarely"& my_prediction2$Score>51]<-"Pass"
+my_prediction2$Grade<-as.factor(decision2)
+error2<-mean(training2$Grade != my_prediction2$Grade)
+error2
+cross_valid_error2<-mean(testing2$Grade != my_prediction2$Grade)
+cross_valid_error2
+install.packages("rpart")
+library(rpart)
+library(rpart.plot)
+library(rpart)
+library(rpart.plot)
+install.packages("rpart.plot")
+install.packages("rpart")
+install.packages("rpart.plot")
+install.packages("rpart")
+install.packages("rpart.plot")
+library(rpart)
+library(rpart.plot)
+train_data <-read.csv("M2021train.csv",stringsAsFactors = FALSE)
+install.packages("devtools")
+install.packages("devtools")
+devtools::install_github("devanshagr/CrossValidation")
+install.packages("rpart")
+install.packages("rpart.plot")
+install.packages("devtools")
+devtools::install_github("devanshagr/CrossValidation")
+install.packages("devtools")
+install.packages("devtools")
+install.packages("devtools")
+install.packages("devtools")
